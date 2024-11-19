@@ -34,7 +34,7 @@ Financial loan services are utilized by companies across various industries, inc
 
 
 ### SmartLender Architecture
-![Smart Lender](smartlender.png "Smart Lender Application")
+![Smart Lender](SmartLender.png)
 
 
 ### Model Predict API
