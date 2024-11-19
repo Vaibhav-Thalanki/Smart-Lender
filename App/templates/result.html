@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Status</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}" />
+</head>
+<body>
+    <div class="result-container">
+        <h1>Loan Approval Prediction</h1>
+        <div id="result">
+            <b>{{output}}</b>
+        </div>
+        <div id="pic">
+            <img src="" alt="Result Image" />
+        </div>
+        <div id="back">
+            <a href="{{ url_for('form') }}" class="btn ">Go Back</a>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

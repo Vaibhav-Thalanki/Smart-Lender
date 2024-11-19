@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant Credibility for Loan Approval</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/predictstyles.css') }}" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Loan Approval Prediction Form</h1>
+        <form id="loanForm" action="/submit" method="post">
+            <label for="Education">Education:</label>
+            <select name="Education" required>
+                <option value="Graduate">Graduate</option>
+                <option value="Not-Graduate">Not Graduate</option>
+            </select>
+
+            <label for="ApplicantIncome">Applicant Income (monthly USD):</label>
+            <input type="number" name="ApplicantIncome" required />
+
+            <label for="Co-applicant">Co-applicant Income (monthly USD):</label>
+            <input type="number" name="Co-applicant" required />
+
+            <label for="LoanAmount">Loan Amount (in thousands USD):</label>
+            <input type="number" name="LoanAmount" required />
+
+            <label for="Loan-Amount-Term">Loan Tenure (months):</label>
+            <input type="number" name="Loan-Amount-Term" required />
+
+            <label for="Credit-History">Credit History:</label>
+            <select name="Credit-History" required>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
+          </select>
+            
+
+            <label for="dependents">Number of Dependents:</label>
+            <select name="dependents" required>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3+">3+</option>
+            </select>
+
+            <label for="property">Property Area:</label>
+            <select name="property" required>
+                <option value="Rural">Rural</option>
+                <option value="Semi-urban">Semi Urban</option>
+                <option value="Urban">Urban</option>
+            </select>
+
+            <input type="submit" value="Submit" class="btn" />
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applicant Credibility for Loan Approval</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/homestyles.css') }}" />
+</head>
+<body>
+    <div class="container">
+        <h1>Applicant Credibility for Loan Approval</h1>
+        <div id="link">
+            <a href="{{ url_for('prediction') }}" class="btn">Next</a>
+        </div>
+        <div id="pic">
+            <img src="{{ url_for('static', filename='images/signing.png') }}" alt="Loan Image" />
+        </div>
+        <div id="info">
+          <p>SMART LENDER: A Loan Credibility Analysis model to predict the credit worthiness of loan applicants.</p>
+          <p>The form values are passed onto an XGBoost Machine Learning model trained on historical loan approval trends.</p>
+        </div>
+    </div>
+</body>
+</html>
