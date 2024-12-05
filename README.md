@@ -3,8 +3,6 @@
 
 Financial loan services are utilized by companies across various industries, including large banks, financial institutions, and government agencies. A key objective for organizations offering financial loan services is to reduce payment defaults and ensure that borrowers repay their loans as anticipated. To achieve this in an efficient and systematic manner, many companies leverage machine learning to predict which individuals are most at risk of defaulting on their loans, allowing for targeted interventions to be deployed to the right individuals.
 
-## Checkout the deployed App: [SmartLender](http://18.218.25.66:8000/)
-
 
 ### Folder Structure
 
